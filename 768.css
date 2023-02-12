@@ -1,0 +1,102 @@
+@media (width < 768px){
+    .hero-section{
+        height: 600px;
+    }
+    .hero-section .text{
+        line-height: 65px;
+    }
+    .text .hey{
+        font-size: 45px;
+    }
+    .text .name{
+        font-size: 80px;
+    }
+    .text .creation{
+        font-size: 25px;
+    }
+    .buttons #d-resume{
+        width: 250px;
+        font-size: 16px;
+    }
+    .buttons .social a{
+        font-size: 33px;
+    }
+    .hero-blob{
+        right: -35%;
+        top: -8%;
+        width: 500px;
+        height: 500px;
+    }
+    .about .aboutme{
+        gap: 20px;
+        padding: 20px 25px;
+    }
+    .about img{
+        width: 190px;
+    }
+    .about .avatar{
+        width: 200px;
+        height: 200px;
+    }
+    .aboutme .abt-text{
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .abt-text .abt-dob,.abt-text .links a{
+        font-size: 25px;
+    }
+    .abt-text .abt-txt{
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .skills .langs i{
+        font-size: 95px;
+    }
+    .proj{
+        grid-template-columns: 1fr;
+    }
+    .contact{
+        grid-template-columns: 1fr;
+    }
+    .projects .proj .project{
+        line-height: 70px;
+    }
+    .navbar{
+        padding: 20px 25px;
+    }
+    .navbar .navlinks .nav-links{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        background: var(--navbar);
+        padding: 20px;
+        top: -500px;
+        right: -65vw;
+        transition: 0.2s linear;
+        box-shadow: 2px 2px 5px var(--bx-2);
+        width: 150vw;
+        border-radius: 0px 0px 10px 10px;
+        z-index: -5;
+        height: 250px;
+        overflow: hidden;
+    }
+    .navbar .navlinks .nav-links.active{
+        transition: 0.2s linear;
+        top: 28.1px;
+    }
+    .navbar .navlinks .nav-links li{
+        width: 200px;
+        margin-bottom: 10px;
+    }
+
+    #menu-btn{
+        display: block;
+    }
+
+
+
+
+}
