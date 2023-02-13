@@ -9,6 +9,7 @@
     font-family: 'Kanit', sans-serif;
     /* font-size: 62.5%; */
     transition: 0.2s linear;
+    border: 1px solid red;
 }
 
 :root{
@@ -38,7 +39,7 @@
 }
 
 body{
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     position: relative;
     display: flex;
     background: var(--white);
@@ -50,6 +51,7 @@ body{
     width: 100vw;
     height: 100vh;
     display: flex;
+    overflow-x: hidden;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -57,6 +59,9 @@ body{
     /* animation: hue 7s infinite linear; */
 }
 .main::-webkit-scrollbar{
+    display: none;
+}
+.theme::-webkit-scrollbar{
     display: none;
 }
 .container::-webkit-scrollbar{
@@ -85,8 +90,8 @@ body{
     height: 100vh;
     background: var(--white);
     /* position: relative; */
-    display: flex;
     overflow-x: hidden;
+    display: flex;
     justify-content: center;
     align-items: center;
     
@@ -95,16 +100,19 @@ body{
     width: 100vw;
     height: 100%;
     display: grid;
+    overflow-x: hidden;
     grid-template-columns: 1fr;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    overflow-x: hidden;
-    position: relative;
+    /* position: relative; */
     background: var(--white);
 }
 .container section{
     width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: var(--white);
     padding: 30px;
 }
@@ -561,19 +569,24 @@ body{
 
 /* section 5 */
 .contact{
-    width: 100%;
     display: grid;
-    gap: 30px;
-    grid-template-columns: 1fr 1fr;
     align-items: center;
+    gap: 30px;
     justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
     background: var(--white);
 }
 .contact .con{
-    display: grid;
+    width: 100%;
+    padding: 0px;
+    width: 100vw;
+    display: flex;
     color: var(--text-color);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     flex-direction: column;
-    grid-template-columns: 1fr;
 }
 .c-title{
     font-weight: 500;
@@ -586,7 +599,9 @@ body{
     width: 100%;
     margin-top: 15px;
 }
-#contact{
+.con #contact{
+    width: 100%;
+    height: 100%;
     border-radius: 10px;
     padding: 7px 15px;
     box-shadow: 2px 2px 5px var(--bx-2);
@@ -641,7 +656,6 @@ body{
     align-items: center;
     font-size: 18px;
     /* background: linear-gradient(to right, #6d83f2, #6a98f0); */
-    
     color: var(--text-color);
 }
 .credits a{
