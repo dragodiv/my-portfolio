@@ -9,6 +9,7 @@
     font-family: 'Kanit', sans-serif;
     /* font-size: 62.5%; */
     transition: 0.2s linear;
+    /* border: 1px solid red; */
 }
 
 :root{
@@ -269,6 +270,8 @@ body{
     /* border: 1px solid red; */
     justify-content: space-between;
     display: flex;
+    background: var(--d-btn);
+    border-radius: 10px;
     margin-top: 15px;
 }
 .buttons .social a{
@@ -294,12 +297,12 @@ body{
  
 .hero-blob{
     position: absolute;
-    right: -20%;
-    top: 15%;
-    width: 700px;
-    height: 700px;
+    right: -15%;
+    top: 12%;
+    width: 800px;
+    height: 800px;
     z-index: -1;
-    transform: rotate(45deg);
+    transform: rotate(65deg);
 }
 
 /* section 2 */
@@ -647,7 +650,7 @@ body{
 
 /* section 6 */
 .credits{
-    height: 50px;
+    height: 60px;
     width: 100vw;
     display: flex;
     justify-content: center;
