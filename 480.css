@@ -28,6 +28,9 @@
     .divCards .cards{
         grid-template-columns: 1fr;
     }
+    .navbar .logo img{
+        width: 120px;
+    }
     .about .aboutme{
         display: flex;
         flex-direction: column;
