@@ -64,6 +64,12 @@
     .navbar{
         padding: 20px 25px;
     }
+    .navbar .logo img{
+        width: 140px;
+    }
+    .navbar{
+        padding: 30px 20px;
+    }
     .navbar .navlinks .nav-links{
         position: absolute;
         display: flex;
@@ -89,9 +95,17 @@
         transition: 0.2s linear;
         top: 28.1px;
         height: 250px;
-        backdrop-filter: blur(100000px);
         animation: x 0.2s linear;
         display: inline-flex;
+    }
+    .divCards .cards{
+        grid-template-columns: 1fr;
+    }
+    .buttons .social{
+        width: 200px;
+    }
+    .buttons .social a{
+        font-size: 35px;
     }
     @keyframes x {
         0%{
@@ -104,22 +118,19 @@
     .navbar .navlinks .nav-links li{
         width: 100%;
         text-align: center;
-        margin-bottom: 10px;
+        margin-bottom: 15px;
     }
 
     #menu-btn{
         display: block;
     }
     .contact{
-        text-align: center;
         grid-template-columns: 1fr;
     }
     .contact .con{
         padding: 30px;
     }
-    .navbar .logo img{
-        width: 140px;
-    }
+
 
 
 }
