@@ -93,7 +93,12 @@
         animation: x 0.2s linear;
         display: inline-flex;
     }
+    .credits{
+        height: 30px;
+        font-size: 12px;
+    }
     .contact .con{
         padding: 0px;
     }
+
 }
