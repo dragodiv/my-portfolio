@@ -73,7 +73,7 @@
         background: var(--navbar);
         padding: 20px;
         top: -500px;
-        right: -55vw;
+        right: -50vw;
         transition: 0.2s linear;
         box-shadow: 2px 2px 5px var(--bx-2);
         width: 150vw;
