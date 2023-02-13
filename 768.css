@@ -114,6 +114,9 @@
         text-align: center;
         grid-template-columns: 1fr;
     }
+    .contact .con{
+        padding: 30px;
+    }
 
 
 
