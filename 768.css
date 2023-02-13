@@ -117,7 +117,9 @@
     .contact .con{
         padding: 30px;
     }
-
+    .navbar .logo img{
+        width: 140px;
+    }
 
 
 }
