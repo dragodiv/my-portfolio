@@ -90,4 +90,7 @@
         animation: x 0.2s linear;
         display: inline-flex;
     }
+    .contact .con{
+        padding: 0px;
+    }
 }
