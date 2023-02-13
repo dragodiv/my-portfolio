@@ -83,6 +83,9 @@
         display: none;
         overflow: hidden;
     }
+    .navbar .logo img{
+        width: 140px;
+    }
     .navbar .navlinks .nav-links.active{
         transition: 0.2s linear;
         top: 28.1px;
