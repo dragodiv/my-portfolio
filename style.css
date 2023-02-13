@@ -133,10 +133,9 @@ body{
 .navlinks{
     position: relative;
 }
-.navbar .logo{
-    font-weight: 700;
-    font-size: 20px;
-    color: var(--nav-col);
+.navbar .logo img{
+    width: 150px;
+    margin-top: 5px;
 }
 
 .navbar .navlinks .nav-links{
