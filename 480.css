@@ -21,22 +21,34 @@
     .buttons .social a{
         font-size: 30px;
     }
-    
+    .footer-links .flexs{
+        height: 100%;
+        font-size: 18px;
+    }
     .hero-blob{
-        right: -100%;
-        top: 10%;
+        left: 45%;
+        top: 15%;
         /* transform: rotate(183434deg); */
-        width: 300px;
-        height: 300px;
+        width: 200px;
+        height: 200px;
     }
     .divCards .cards{
         grid-template-columns: 1fr;
     }
     .about .aboutme{
         display: flex;
+        justify-content: center;
+        align-items: center;
         flex-direction: column;
         padding: 20px 25px;
         text-align: center;
+    }
+    .abt-text .abt-txt{
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .skills .langs i{
+        font-size: 80px;
     }
     .about img{
         width: 170px;
@@ -68,45 +80,15 @@
     .navbar{
         padding: 20px 25px;
     }
-    .navbar .navlinks .nav-links{
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        text-align: center;
-        background: var(--navbar);
-        padding: 20px;
-        top: -500px;
-        right: -50vw;
-        transition: 0.2s linear;
-        box-shadow: 2px 2px 5px var(--bx-2);
-        width: 150vw;
-        border-radius: 0px 0px 10px 10px;
-        z-index: -5;
-        height: 0px;
-        display: none;
-        overflow: hidden;
-    }
     .navbar .logo img{
         width: 120px;
     }
-    .navbar .navlinks .nav-links.active{
-        transition: 0.2s linear;
-        top: 28.1px;
-        height: 250px;
-        animation: x 0.2s linear;
-        display: inline-flex;
+    .buttons #d-resume{
+        height: 45px;
     }
     .navbar .navlinks .nav-links li{
         width: 200px;
         margin-bottom: 10px;
-    }
-    #menu-btn{
-        display: block;
-    }
-    .contact .con{
-        padding: 15px;
     }
 
 
