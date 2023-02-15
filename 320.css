@@ -13,6 +13,9 @@
         font-size: 18px;
         line-height: 30px;
     }
+    .skills .langs i{
+        font-size: 50px;
+    }
     .buttons #d-resume{
         width: 200px;
         font-size: 16px;
@@ -62,43 +65,12 @@
     .navbar{
         padding: 20px 25px;
     }
-
-    .navbar .navlinks .nav-links{
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        text-align: center;
-        background: var(--navbar);
-        padding: 20px;
-        top: -500px;
-        right: -50vw;
-        transition: 0.2s linear;
-        box-shadow: 2px 2px 5px var(--bx-2);
-        width: 150vw;
-        border-radius: 0px 0px 10px 10px;
-        z-index: -5;
-        height: 0px;
-        display: none;
-        overflow: hidden;
-    }
     .navbar .logo img{
         width: 100px;
     }
-    .navbar .navlinks .nav-links.active{
-        transition: 0.2s linear;
-        top: 28.1px;
-        height: 250px;
-        animation: x 0.2s linear;
-        display: inline-flex;
-    }
     .credits{
         height: 30px;
-        font-size: 12px;
-    }
-    .contact .con{
-        padding: 0px;
+
     }
 
 }
