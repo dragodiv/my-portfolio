@@ -1,4 +1,7 @@
 @media (width < 768px){
+    ::-webkit-scrollbar{
+        width: 5px;
+    }
     .hero-section{
         height: 600px;
     }
@@ -27,6 +30,9 @@
         width: 500px;
         height: 500px;
     }
+    .skills .langs i{
+        font-size: 100px;
+    }
     .about .aboutme{
         gap: 20px;
         padding: 20px 25px;
@@ -44,6 +50,7 @@
     }
     .abt-text .abt-dob,.abt-text .links a{
         font-size: 25px;
+        margin: 0px 8px;
     }
     .abt-text .abt-txt{
         font-size: 20px;
@@ -70,26 +77,8 @@
     .navbar{
         padding: 30px 20px;
     }
-    .navbar .navlinks .nav-links{
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        text-align: center;
-        background: var(--navbar);
-        padding: 20px;
-        /* top: -500px; */
-        border-bottom: 3px solid #6d83f2;
-        right: -65vw;
-        transition: 0.2s linear;
-        box-shadow: 2px 2px 5px var(--bx-2);
-        width: 150vw;
-        border-radius: 0px 0px 10px 10px;
-        z-index: 999999;
-        /* height: 0px; */
-        display: none;
-        overflow: hidden;
+    #menu{
+        font-size: 10px;
     }
     .navbar .navlinks .nav-links.active{
         transition: 0.2s linear;
@@ -120,15 +109,24 @@
         text-align: center;
         margin-bottom: 15px;
     }
-
+    .about .aboutme{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-links .flexs{
+        height: 100%;
+        font-size: 18px;
+    }
+    .abt-text .abt-txt{
+        font-size: 18px;
+        line-height: 22px;
+    }
     #menu-btn{
         display: block;
     }
     .contact{
         grid-template-columns: 1fr;
-    }
-    .contact .con{
-        padding: 30px;
     }
 
 
