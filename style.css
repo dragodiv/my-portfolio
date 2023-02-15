@@ -37,7 +37,6 @@
 ::-webkit-scrollbar-thumb:hover{
     background: #6a98f0;
 }
-
 body{
     /* overflow-x: hidden; */
     position: relative;
@@ -59,12 +58,6 @@ body{
     /* animation: hue 7s infinite linear; */
 }
 .main::-webkit-scrollbar{
-    display: none;
-}
-.theme::-webkit-scrollbar{
-    display: none;
-}
-.container::-webkit-scrollbar{
     display: none;
 }
 @keyframes hue {
@@ -133,15 +126,25 @@ body{
 
 .navlinks{
     position: relative;
+    padding: 0;
+    margin: 0;
 }
 .navbar .logo img{
     width: 150px;
     margin-top: 5px;
+    cursor: pointer;
 }
-
+.nav-data{
+    width: 100%;
+    display: flex;
+    height: 55px;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+}
 .navbar .navlinks .nav-links{
     display: flex;
-    height: 50px;
+    height: 55px;
     justify-self: center;
     align-items: center;
 }
@@ -186,6 +189,9 @@ body{
     font-weight: 500;
     cursor: pointer;
 }
+#theme-btn{
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+}
 #menu-btn{
     display: none;
 }
@@ -200,6 +206,7 @@ body{
     color: var(--d-btn);
     cursor: pointer;
     border-radius: 50%;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
 }
 
 /* hero section css */
@@ -222,15 +229,17 @@ body{
     color: var(--text-color);
     z-index: 3;
     height: 90vh;
-    line-height: 100px;
+    line-height: 90px;
 }
 .text .hey{
     font-size: 70px;
     font-weight: 500;
+    margin-bottom: 10px;
 }
 .text .name{
     font-size: 120px;
     font-weight: 700;
+    margin-bottom: 25px;
     /* background: linear-gradient(to left, #6d83f2, #6a98f0);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
@@ -240,8 +249,11 @@ body{
 .text .creation{
     font-size: 35px;
     font-weight: 400;
+    line-height: 25px;
+    margin-bottom: 10px;
 }
 .buttons{
+    margin-top: 20px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -252,27 +264,29 @@ body{
 .buttons #d-resume{
     width: 300px;
     background: linear-gradient(to left, #6d83f2, #6a98f0);
+    /* border: 3px solid var(--white); */
     border: none;
-    height: 45px;
+    height: 50px;
     color: var(--d-btn);
     border-radius: 10px;
     font-size: 20px;
     transition: 0.2s linear;
     cursor: pointer;
+    box-shadow: 2px 2px 5px var(--bx-2);
 }
 .buttons #d-resume:hover{
     transform: scale(1.02) translateY(-5px);
     background: linear-gradient(to right, #6d83f2, #6a98f0);
-    box-shadow: 2px 2px 5px var(--primary);
+    box-shadow: 2px 2px 5px var(--bx-2);
 }
 .buttons .social{
-    width: 230px;
-    /* border: 1px solid red; */
+    width: 250px;
     justify-content: space-between;
     display: flex;
+    padding: 0px 7px;
     background: var(--d-btn);
     border-radius: 10px;
-    margin-top: 15px;
+    margin-top: 20px;
 }
 .buttons .social a{
     font-size: 40px;
@@ -356,10 +370,11 @@ body{
     height: 80px;
     font-size: 35px;
     display: flex;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    color: var(--white);
+    color: var(--d-btn);
     background: linear-gradient(to top left, #6d83f2, #6a98f0);
 }
 .js{
@@ -384,12 +399,12 @@ body{
     justify-content: center;
     align-items: center;
     z-index: 6;
-}
+} 
 .abt-title{
     font-weight: 500;
     font-size: 40px;
-    margin-bottom: 20px;
     color: var(--text-color);
+    margin-bottom: 20px;
 }
 .about .aboutme{
     width: 100%;
@@ -434,15 +449,23 @@ body{
     font-size: 40px;
 }
 .abt-text .links a{
-    font-size: 40px;
+    font-size: 35px;
+    margin-right: 10px;
     color: var(--d-btn);
 }
 .abt-text .abt-txt{
     font-size: 25px;
     margin-top: 5px;
+    font-weight: 400;
     line-height: 30px;
+    word-wrap: break-word;
 }
-
+.abt-text .links{
+    margin-top: 15px;
+}
+.abt-text .links a:hover i{
+    transform: scale(1.05) translateY(-3px);
+}
 .about .skills{
     display: flex;
     width: 100%;
@@ -525,11 +548,12 @@ body{
 .project .p-title{
     font-size: 50px;
     font-weight: 600;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 .project .p-about{
-    font-size: 20px;
-    line-height: 25px;
+    margin-top: 10px;
+    font-size: 25px;
+    line-height: 30px;
 }
 .project .p-btns{
     display: flex;
@@ -582,10 +606,9 @@ body{
 .contact .con{
     width: 100%;
     padding: 0px;
-    width: 100vw;
     display: flex;
     color: var(--text-color);
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     text-align: center;
     flex-direction: column;
@@ -603,7 +626,7 @@ body{
 }
 .con #contact{
     width: 100%;
-    height: 100%;
+    height: 290px;
     border-radius: 10px;
     padding: 7px 15px;
     box-shadow: 2px 2px 5px var(--bx-2);
@@ -612,7 +635,7 @@ body{
 .inputs input{
     width: 100%;
     height: 45px;
-    padding: 0px 10px;
+    padding: 10px 10px;
     font-size: 18px;
     border-radius: 7px;
     outline: none;
@@ -648,20 +671,65 @@ body{
 ::placeholder{
     color: #303030;
 }
+.footer-links{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 320px;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--text-color);
+    font-size: 40px;
+    font-weight: 500;
+    height: 100%;
+}
+.footer-links .f-title{
+    margin-bottom: 10px;
+}
+.footer-links .flexs{
+    height: 270px;
+    width: 80%;
+    font-size: 20px;
+    display: grid;
+    font-weight: 400;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    margin-top: 20px;
+}
+.f1,.f2{
+    width: 100%;
+    /* padding-left: 30px; */
+    text-align: left;
+    display: flex;
+    /* justify-content: space-between; */
+    flex-direction: column;
+}
+.f1 a,.f2 a{
+    margin-bottom: 10px;
+    color: var(--text-color);
+    text-decoration: none;
+}
+.f1 a:hover,.f2 a:hover{
+    transform: scale(1.02) translateY(-2px) translateX(2px);
+    color: #6a98f0;
+}
 
 /* section 6 */
 .credits{
-    height: 60px;
     width: 100vw;
+    padding: 0;
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 18px;
-    /* background: linear-gradient(to right, #6d83f2, #6a98f0); */
+    z-index: 999999;
+    border-top: 1.5px solid var(--text-color);
+    box-shadow: -2px -2px 5px var(--bx-2);
     color: var(--text-color);
+    /* background: linear-gradient(to right, #6d83f2, #6a98f0); */
+    margin: 10px 0px;
 }
 .credits a{
-    
     color: var(--text-color);
     text-decoration: none;
 }
