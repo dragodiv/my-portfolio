@@ -305,9 +305,9 @@
         Email.send({
         SecureToken : "51467327-3a0f-43f9-8e3c-30241a311e1b",
         To : "ad.creations.on@gmail.com",
-        From : document.getElementById("email").value,
+        From : "ad.creations.on@gmail.com",
         Subject : "New Mail from \"Portfolio ~ Divanshu Soni\"",
-        Body : document.getElementById("message").value
+        Body : document.getElementById("email").value+document.getElementById("message").value
         }).then(
         message => alert(message)
         );
