@@ -1,2 +1,2 @@
 # my-portfolio
-http://divanshu.tech
+https://www.divanshu.tech/
