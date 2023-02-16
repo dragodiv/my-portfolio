@@ -98,6 +98,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    scroll-behavior: smooth;
     /* position: relative; */
     background: var(--white);
 }
