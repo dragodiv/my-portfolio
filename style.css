@@ -648,7 +648,7 @@ body{
     padding: 0px 10px;
     padding-top: 5px;
     font-size: 18px;
-    resize: vertical;
+    resize: none;
     background: rgba(255, 255, 255, 0.7);
     margin-bottom: 7px;
     border-radius: 5px;
