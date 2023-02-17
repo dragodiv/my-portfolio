@@ -307,7 +307,7 @@
         To : "ad.creations.on@gmail.com",
         From : "ad.creations.on@gmail.com",
         Subject : "New Mail from \"Portfolio ~ Divanshu Soni\"",
-        Body : document.getElementById("email").value+document.getElementById("message").value
+        Body : document.getElementById("email").value+"<br>"+document.getElementById("message").value
         }).then(
         message => alert(message)
         );
