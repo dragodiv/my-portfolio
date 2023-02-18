@@ -20,6 +20,22 @@
     gtag('config', 'G-LX7VDMMT18');
     </script>
 
+  <script>
+  window.addEventListener("load", ()=>{
+        if(window.matchMedia("(prefers-color-scheme : dark)").matches){
+            let toggle = document.getElementById("theme-toggle"),
+            themebtn = document.getElementById("theme-btn"),
+            themeData = document.getElementById("theme-data");
+            toggle.classList.add("dark");
+            themebtn.classList.add("fa-moon");
+            themeData.innerText = "Dark";
+        }else{
+            toggle.classList.remove("dark");
+            themebtn.classList.remove("fa-moon");
+            themeData.innerText = "Light";
+        }
+    })
+  </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -259,20 +275,6 @@
 
 <script src="https://smtpjs.com/v3/smtp.js"></script>
 <script>
-    window.addEventListener("load", ()=>{
-        if(window.matchMedia("(prefers-color-scheme : dark)").matches){
-            let toggle = document.getElementById("theme-toggle"),
-            themebtn = document.getElementById("theme-btn"),
-            themeData = document.getElementById("theme-data");
-            toggle.classList.add("dark");
-            themebtn.classList.add("fa-moon");
-            themeData.innerText = "Dark";
-        }else{
-            toggle.classList.remove("dark");
-            themebtn.classList.remove("fa-moon");
-            themeData.innerText = "Light";
-        }
-    })
     let theme = document.getElementById("theme");
     theme.addEventListener("click", ()=>{
         let toggle = document.getElementById("theme-toggle"),
