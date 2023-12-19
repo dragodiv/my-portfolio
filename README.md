@@ -1,2 +1,7 @@
 # my-portfolio
-https://www.divanshu.tech/
+
+previous version ⬇️
+http://www.divanshusoni.in/my-portfolio
+
+updated live portfolio ⬇️
+http://www.divanshusoni.in
